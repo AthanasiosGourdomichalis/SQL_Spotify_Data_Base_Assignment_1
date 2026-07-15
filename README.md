@@ -78,17 +78,22 @@ iv. We save all our DDL statements in a file named create_table.sql (we can
 use the .schema command within the SQLite command-line  
 interface to inspect and extract our definitions).
 
-3. Data Importing: 
+3. Data Importing:
+   
 a. We create a script file named imports.sql containing all 
-the .import meta-commands.  
+the .import meta-commands.
+ 
 b. We set the shell mode to CSV at the beginning of the script with 
 the SQL command: 
 .mode csv 
+
 c. We include a .import statement mapping each CSV file to its 
 designated table.  
+
 d. Tip: If the CSV source files contain headers, use the following 
 SQL command to skip the first row: 
 .import --skip 1 file.csv table_name
+
 ----------------------------------------------------------------------------------
 4. Useful Links:
    
