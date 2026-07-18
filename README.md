@@ -93,7 +93,6 @@ designated table.
 d. Tip: If the CSV source files contain headers, use the following 
 SQL command to skip the first row: 
 .import --skip 1 file.csv table_name
-
 ----------------------------------------------------------------------------------
 4. Useful Links:
    
